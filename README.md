@@ -1,4 +1,4 @@
-# Merriam-Webster Quick Lookup
+# WorkPeek
 
 Look up words while reading in Chrome. Select a word for a quick definition, or open the extension's toolbar popup for a full dictionary entry.
 
@@ -42,7 +42,7 @@ You need Chrome, Node.js 22 or newer, and npm 8 or newer. Node includes npm. The
 
 3. Open `chrome://extensions` in Chrome and enable **Developer mode**.
 4. Click **Load unpacked** and select the generated **`dist/`** folder.
-5. Pin **Merriam-Webster Quick Lookup** from Chrome's extensions menu if you want easy toolbar access.
+5. Pin **WorkPeek** from Chrome's extensions menu if you want easy toolbar access.
 6. Configure a lookup source below, then refresh any already-open web pages.
 
 Keep the `dist/` folder in place while using the unpacked extension. It is generated locally and is excluded from version control.

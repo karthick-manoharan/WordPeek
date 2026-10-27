@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Merriam-Webster Quick Lookup",
+  "name": "WorkPeek",
   "version": "1.0.0",
-  "description": "Instantly look up words using the Merriam-Webster Dictionary and Thesaurus.",
+  "description": "Look up words with Merriam-Webster Dictionary and Thesaurus or Free Dictionary.",
   "permissions": ["storage", "activeTab", "offscreen"],
   "icons": {
     "16": "icons/icon16.png",

@@ -1,5 +1,5 @@
 {
-  "name": "merriam-webster-chrome-extension",
+  "name": "workpeek",
   "version": "1.0.0",
   "scripts": {
     "dev": "vite build --watch",
@@ -7,7 +7,7 @@
     "test": "node scripts/verify-theme.mjs && node scripts/verify-ui.mjs"
   },
   "type": "module",
-  "description": "Merriam-Webster Quick Lookup Chrome Extension",
+  "description": "WorkPeek dictionary lookup Chrome extension",
   "devDependencies": {
     "@types/chrome": "^0.1.40",
     "@types/react": "^19.2.14",

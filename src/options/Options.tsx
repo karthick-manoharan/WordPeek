@@ -65,7 +65,7 @@ export function Options() {
 
   return (
     <div className="opts-shell">
-      <h1 className="opts-title">MW Quick Lookup — Settings</h1>
+      <h1 className="opts-title">WorkPeek — Settings</h1>
       <p className="opts-desc">
         Register for free API keys at{" "}
         <a href="https://dictionaryapi.com/register/index" target="_blank" rel="noreferrer">
