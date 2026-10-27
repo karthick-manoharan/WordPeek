@@ -1,0 +1,238 @@
+/* ── Dictionary card container ── */
+.mw-dict-card {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 14px;
+  color: var(--text);
+  background: var(--surface);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ── Offensive banner ── */
+.mw-offensive-banner {
+  background: var(--ant-bg);
+  color: var(--ant-text);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  padding: 5px 16px;
+  text-align: center;
+}
+
+/* ── Entry divider (between POS entries) ── */
+.mw-entry-divider {
+  height: 6px;
+  background: var(--hover);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+/* ── Sense list ── */
+.mw-sense-list {
+  padding: 6px 0;
+}
+
+/* ── Verb divider label ── */
+.mw-verb-divider {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--secondary);
+  text-transform: uppercase;
+  padding: 8px 16px 4px;
+}
+
+/* ── Sense group ── */
+.mw-sense-group {
+  margin-bottom: 2px;
+}
+
+/* ── Individual sense row ── */
+.mw-sense-row {
+  display: flex;
+  align-items: flex-start;
+  padding: 3px 16px 3px 12px;
+  gap: 6px;
+}
+
+.mw-sense-num {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--secondary);
+  min-width: 28px;
+  flex-shrink: 0;
+  padding-top: 1px;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.mw-sense-body {
+  flex: 1;
+  line-height: 1.5;
+}
+
+.mw-sense-def {
+  font-size: 13.5px;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+/* ── Subject/status label chips ── */
+.mw-sls-chip-row {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-right: 6px;
+}
+
+.mw-sls-chip {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  vertical-align: middle;
+}
+
+/* ── Divided sense (also:) ── */
+.mw-sds {
+  margin-top: 3px;
+  padding-left: 4px;
+  border-left: 2px solid var(--border);
+}
+
+.mw-sds-label {
+  font-size: 11px;
+  font-style: italic;
+  color: var(--secondary);
+  margin-right: 4px;
+}
+
+/* ── Verbal illustrations ── */
+.mw-vis-group {
+  margin-top: 3px;
+}
+
+.mw-vis {
+  padding: 2px 0 2px 8px;
+  border-left: 2px solid var(--border);
+  margin-top: 2px;
+}
+
+.mw-vis-quote {
+  font-size: 12.5px;
+  color: var(--secondary);
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.mw-vis-attr {
+  font-size: 11px;
+  color: var(--secondary);
+  font-style: normal;
+}
+
+/* ── Usage notes ── */
+.mw-usage-note {
+  font-size: 12px;
+  color: var(--secondary);
+  margin-top: 3px;
+  padding: 4px 8px;
+  background: var(--raised);
+  border-radius: 4px;
+}
+
+/* ── Cross-reference links ── */
+.mw-dict-xref {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  font-size: inherit;
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  cursor: pointer;
+  display: inline;
+  line-height: inherit;
+}
+
+.mw-dict-xref:hover {
+  color: var(--link-hover);
+  text-decoration-style: solid;
+}
+
+/* ── Related forms ── */
+.mw-related-forms {
+  border-top: 1px solid var(--border);
+}
+
+.mw-uro-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  font-size: 13px;
+}
+
+.mw-uro-item {
+  color: var(--text);
+}
+
+.mw-uro-form {
+  font-weight: 600;
+}
+
+.mw-uro-fl {
+  color: var(--secondary);
+  font-style: italic;
+}
+
+.mw-uro-sep {
+  color: var(--border);
+}
+
+/* ── Learner's Dictionary defs ── */
+.mw-ldq-def {
+  margin-bottom: 8px;
+}
+
+.mw-ldq-sense {
+  font-size: 13px;
+  color: var(--text);
+  line-height: 1.5;
+  padding: 2px 0;
+}
+
+/* ── Dict search bar with nav arrows ── */
+.mw-dict-search-bar {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--border);
+  gap: 6px;
+}
+
+.mw-dict-nav-btn {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 4px 8px;
+  font-size: 14px;
+  color: var(--secondary);
+  cursor: pointer;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.mw-dict-nav-btn:disabled {
+  color: var(--disabled-text);
+  border-color: var(--border);
+  cursor: default;
+}
+
+.mw-dict-nav-btn:not(:disabled):hover {
+  background: var(--hover);
+}

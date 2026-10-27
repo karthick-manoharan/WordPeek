@@ -1,0 +1,97 @@
+/* ── Nav dock container ── */
+.mw-nav-dock {
+  display: flex;
+  flex-direction: row;       /* horizontal: top/bottom positions */
+  flex-shrink: 0;
+  background: var(--raised);
+  border-bottom: 2px solid var(--border);
+  padding: 0;
+}
+
+/* Vertical dock (left/right positions) */
+.mw-nav-dock[data-vertical="true"] {
+  flex-direction: column;
+  border-bottom: none;
+  border-right: 2px solid var(--border);
+  width: 70px;
+}
+
+/* When dock is on the right */
+[data-nav-pos="right"] .mw-nav-dock {
+  border-right: none;
+  border-left: 2px solid var(--border);
+  width: 70px;
+}
+
+/* When dock is on the bottom */
+[data-nav-pos="bottom"] .mw-nav-dock {
+  border-bottom: none;
+  border-top: 2px solid var(--border);
+}
+
+/* ── Nav button (horizontal default) ── */
+.mw-nav-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  padding: 7px 14px;
+  border: none;
+  border-bottom: 3px solid transparent;
+  border-radius: 0;
+  background: transparent;
+  color: var(--secondary);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: inherit;
+  transition: color 0.12s, border-color 0.12s, background 0.12s;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.mw-nav-btn:hover {
+  color: var(--text);
+  background: var(--hover);
+}
+
+.mw-nav-btn--active {
+  color: var(--link);
+  border-bottom-color: var(--link);
+  font-weight: 600;
+}
+
+.mw-nav-btn--active:hover {
+  background: var(--active);
+}
+
+/* ── Vertical button variant (left/right positions) ── */
+.mw-nav-btn--vertical {
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px 6px;
+  border-bottom: none;
+  border-left: 3px solid transparent;
+  font-size: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.mw-nav-btn--vertical.mw-nav-btn--active {
+  border-left-color: var(--link);
+}
+
+[data-nav-pos="right"] .mw-nav-btn--vertical {
+  border-left: none;
+  border-right: 3px solid transparent;
+}
+
+[data-nav-pos="right"] .mw-nav-btn--vertical.mw-nav-btn--active {
+  border-right-color: var(--link);
+}
+
+/* ── Label text ── */
+.mw-nav-label {
+  display: inline;
+  letter-spacing: 0.2px;
+}

@@ -1,0 +1,149 @@
+.fd-card {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.fd-entry + .fd-entry {
+  border-top: 2px solid var(--border);
+}
+
+/* Sense list */
+.fd-sense-list {
+  padding: 8px 0;
+}
+
+.fd-sense {
+  padding: 6px 16px;
+}
+
+.fd-sense + .fd-sense {
+  border-top: 1px solid var(--border);
+}
+
+.fd-sense-row {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.fd-sense-num {
+  flex-shrink: 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--secondary);
+  padding-top: 2px;
+  min-width: 16px;
+}
+
+.fd-sense-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Tags */
+.fd-tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 2px;
+}
+
+.fd-tag {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--link);
+  background: var(--tag-bg);
+  border-radius: 3px;
+  padding: 1px 5px;
+}
+
+/* Definition */
+.fd-definition {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+/* Examples */
+.fd-examples {
+  margin-top: 2px;
+}
+
+.fd-example {
+  margin: 3px 0 0 0;
+  padding: 4px 10px;
+  border-left: 3px solid var(--border);
+  font-size: 12px;
+  color: var(--secondary);
+  font-style: italic;
+  line-height: 1.4;
+}
+
+/* Inline syn/ant under a sense */
+.fd-mini-pills {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  margin-top: 2px;
+}
+
+.fd-mini-label {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.fd-mini-pill {
+  font-size: 11px;
+  padding: 2px 8px;
+}
+
+/* Subsenses */
+.fd-subsenses {
+  margin-top: 4px;
+}
+
+.fd-subsense-toggle {
+  background: none;
+  border: none;
+  font-size: 12px;
+  color: var(--link);
+  cursor: pointer;
+  padding: 0;
+  font-weight: 600;
+}
+
+.fd-subsense-toggle:hover {
+  text-decoration: underline;
+}
+
+.fd-subsense-list {
+  border-left: 2px solid var(--border);
+  margin-left: 4px;
+  margin-top: 4px;
+  padding-left: 4px;
+}
+
+/* Source attribution */
+.fd-source {
+  padding: 6px 16px 10px;
+  font-size: 11px;
+  color: var(--secondary);
+}
+
+.fd-source a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+.fd-source a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,19 @@
+node_modules/
+dist/
+
+# Local planning and agent tooling
+/openspec/
+/.agents/
+/.codex/
+/.claude/
+
+# Editor and operating-system metadata
+/.idea/
+/.vscode/
+.DS_Store
+
+# Local configuration and logs
+.env
+.env.*
+!.env.example
+*.log

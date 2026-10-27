@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MW Quick Lookup</title>
+    <link rel="stylesheet" href="../theme/theme.css" />
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body { width: 340px; min-height: 80px; background: var(--surface); }
+
+      .mw-popup-shell {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .mw-search-bar {
+        display: flex;
+        align-items: center;
+        padding: 10px 12px;
+        border-bottom: 1px solid var(--border);
+        gap: 8px;
+      }
+
+      .mw-search-input {
+        flex: 1;
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        padding: 6px 10px;
+        font-size: 14px;
+        outline: none;
+      }
+
+      .mw-search-input:focus {
+        border-color: var(--link);
+      }
+
+      .mw-search-btn {
+        background: var(--button);
+        color: var(--button-text);
+        border: none;
+        border-radius: 6px;
+        padding: 6px 12px;
+        font-size: 15px;
+        cursor: pointer;
+      }
+
+      .mw-search-btn:hover { background: var(--button-hover); }
+      .mw-search-btn:disabled { background: var(--disabled); cursor: default; }
+
+      .mw-popup-body { min-height: 40px; }
+
+      .mw-popup-hint {
+        padding: 16px;
+        font-size: 13px;
+        color: var(--secondary);
+        text-align: center;
+      }
+
+      .mw-popup-error {
+        padding: 12px 16px;
+        font-size: 13px;
+        color: var(--error);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "merriam-webster-chrome-extension",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "test": "node scripts/verify-theme.mjs && node scripts/verify-ui.mjs"
+  },
+  "type": "module",
+  "description": "Merriam-Webster Quick Lookup Chrome Extension",
+  "devDependencies": {
+    "@types/chrome": "^0.1.40",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^4.7.0",
+    "typescript": "^6.0.2",
+    "vite": "^6.4.2",
+    "vite-plugin-web-extension": "^4.5.1",
+    "esbuild": "0.25.12",
+    "linkedom": "0.14.26"
+  },
+  "dependencies": {
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
+  }
+}
